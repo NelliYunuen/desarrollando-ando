@@ -1,0 +1,125 @@
+
+/* 
+	ELABORADO POR:
+	GARCÍA DE SANTIAGO SUSANA PAULINA
+	PEÑA SEGUNDO NELLI YUNUEN
+*/
+
+/* --- REGLAS BARRA DE NAVEGACIÓN ---*/
+/*Regla que aplica para la posicion de la barra de navegación*/
+.navbar{
+	position: fixed;
+	width: 100%;
+}
+/*Regla que aplica al margen izquierdo da los elementos de la lista de la barra de navegación*/
+nav ul{
+	margin-left: 420px;
+}
+/*Regla que da formato al texto y fondo de la clase botton-signup*/
+.botton-signup{
+	background-color: #fcff20;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*Regla que aplica al borde de la clase login*/
+.login{
+	border: 2px solid yellow;
+}
+/*Regla que aplica al margen derecho de las clases cont e login*/
+.cont, .login {
+	margin-right: 30px;
+}
+/*Regla que da formato a la primera letra del nombre de la marca (Learn Coding)*/
+.navbar-brand::first-letter{
+	background-color: #5882FA;
+	font-size: 30px;
+	padding: 5px;
+}
+
+/*--- FORMATO ENLACES ---*/
+
+/*Se le quita el formato del elemento 'a' a todos los enlaces*/
+a{
+	text-decoration: none;
+}
+/*Regla para resaltar los enlaces excepto al de la clase navbar-brand*/
+a:hover:not(.navbar-brand){
+	background: #F4FA58;
+	box-shadow: 0 0 5px #F4FA58, 0 0 20px #F4FA58, 0 0 40px #F4FA58;
+	transition-delay: 0.1s;
+	border-radius: 50px;
+}
+
+/*FORMATO BODY*/
+/*Da color al fondo de la página*/
+body{
+	background-color: #9BB7F4;
+}
+/*Regla que aplica formato a la clase sec*/
+.section1-1{
+	margin: auto; /*Centrará al elemento section de acuerdo con el tamaño de la página*/
+	width: 80%; /*Ancho del elemento section respecto al tamaño de la página*/ 
+	padding: 15px;
+}
+/*Regla para la tipografía de los encabezados de nivel 1*/
+h1{
+	font-family: Gill Sans MT;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 50px;
+}
+/*Regla para la tipografía de los encabezados de niver 2*/
+h2{
+	font-family: Source Sans Pro;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+/*Regla que aplica a para la tipografía de los párrafos*/
+p{
+	font-family: Tw Cen MT;
+}
+/*Regla que aplica para el margen de la clase dini*/
+.section1-1-1{
+	margin-top: 150px;
+}
+
+/*PIE DE PÁGINA*/
+/*Regla que aplica para el texto con id contacto*/
+#contacto{
+	font-family: Book Antiqua;
+	font-size: 20px;
+}
+/*Regla que da formato al elemento footer*/
+footer{
+	background-color: #333E5F;
+	margin-top: 150px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: white;
+	text-align: center;
+	
+}
+/*Regla que da formato a las imágenes del footer*/
+footer img{
+	width: 50px;
+	height: 50px;
+}
+
+/*Regla que da formato a los recuadros con la class momento*/
+.momento{
+	position: relative;
+	width: 45%;
+}
+/*Regla que ordena los cuadros al lado izquierdo*/
+.momento:nth-child(even) {
+	left: 55%;
+}
+/*Regla que da formato al texto dentro de los recuadros*/
+.forma{
+	font-size: 20px;
+	font-family: Book Antiqua;
+}

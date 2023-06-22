@@ -1,0 +1,282 @@
+
+<!-- 
+	ELABORADO POR:
+	GARCÍA DE SANTIAGO SUSANA PAULINA
+	PEÑA SEGUNDO NELLI YUNUEN
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<!-- Documento css con estilos generales -->
+	<link rel="stylesheet" href="assets/design.css">
+    <title>Learn Coding</title>
+	<!-- Etiqueta style para los estilos en css -->
+	<style>
+		.section1{
+			background-color: #333E5F;
+		}
+		
+		.ini{
+			font-size: 35px;
+			margin-top: 80px;
+		}
+		h1{
+			font-size: 75px;
+			font-weight: bold;
+			color: white;
+			text-shadow: #fff 0 0 10px;
+			text-align:left;
+		}
+		p{
+			font-size: 30px;
+			color: white;
+		}
+		.imp{
+			font-size: 30px;
+			text-shadow:
+					0 1px 0 #ccc,
+					0 3px 0 #bbb,
+					0 1px 3px rgba(0,0,0,.3),
+					0 3px 5px rgba(0,0,0,.2);
+			margin-bottom: 30px;
+			margin-top: 25px;
+		}
+		.btn{
+			margin-top: 20px;
+			font-size: 22px;
+			margin-bottom: 50px;
+			border-radius: .4rem;
+		}
+		.home1{
+			margin-top: 35px;
+			float: right;
+			margin-left: 25px;
+			
+		}
+		.home{
+			
+			width: 500px;
+			
+		}
+		.section2{
+			background-color: #399ab1;
+			text-align: center;
+			margin-bottom: 80px;
+		}
+		.section2 .section1-1{
+			text-align: center;
+		}
+		
+		.dfb{
+			display: inline-block;
+			margin-bottom: 50px;	
+		}
+		.FB{
+			margin-top: 50px;
+			text-align: justify;
+		}
+		.container{
+			color: #fff;
+		}
+		h2{
+			font-size: 25px;
+			margin-bottom: 40px;
+		}
+		
+		.container .FB{
+			width: 340px;
+			
+			margin-left: 40px;
+			margin-right: 40px;
+			
+		}
+		.dtem{
+			display: inline-block;
+			width: 380px;
+		}
+		.tem{
+			color: black;
+			font-size: 23px;
+		}
+		.tema{
+			width: 100%;
+		}
+		.dimg{
+			width: 60%;
+			display: inline-block;
+			margin-top: 30px;	
+		}
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+		
+		.section2 p + img{
+			width: 80%;
+		}
+		.section2 div + img{
+			width: 70%;
+		}
+		p a img{
+			width: 30px;
+			height: 30px;
+		}
+		a{
+			color: #fff;
+		}
+		
+		#formu{
+			display: none;
+		}
+	</style>
+  </head>
+  <body>
+	<!-- Barra de navegación con elementos propios de esta página (las direcciones de los archivos de los elementos) -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="/desarrollando-ando">Learn Coding</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarScroll">
+				<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/desarrollando-ando">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/cursos.php">Cursos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/ilustrate.php">Ilústrate</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/beneficios.php">Beneficios</a>
+					</li>
+					<li class="nav-item cont">
+						<a class="nav-link" href="pages/contactos.php">Contáctanos</a>
+					</li>
+					<li class="nav-item login">
+						<a class="nav-link" href="pages/login.php">Iniciar Sesión</a>
+					</li>
+					<li class="nav-item botton-signup">
+						<a class="nav-link" href="pages/signup.php">Inscribete</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Se dividirá en secciones que ayudará a darle diferente formato a cada una (color) -->
+	<!-- Sección uno  -->
+	<section class="section1">
+		<div class="section1-1" id="formu">
+			<div class="section1-1-1">
+				<h1>Inscribete y comienza a aprender</h1>
+				<!-- Formulario para registrarse -->
+				<form action="../php/regusers.php" method="post">
+					<div class="row">
+						<div class="col">
+							<input name="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+						</div>
+						<div class="col">
+							<input name="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+						<input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text">Nosotros nunca compartiremos tu correo electrónico con alguien más.</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Contraseña</label>
+						<input name="pass" type="password" class="form-control" id="exampleInputPassword1">
+					</div>
+					<button type="submit" value="enviar" class="btn btn-primary">Enviar</button>
+				</form>
+				<p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión</a></p>
+			</div>
+		</div>
+		<div class="section1-1">
+			
+			<div class="section1-1-1">
+				<div class="home1">
+					<img src="img/home/hoome.jpg" class="home">
+				</div>
+				<p class="ini">Cursos de</p>
+				<h1>Desarrollo <br>web</h1>
+				<p class="imp">¿Te gustaría crear la página web de tus sueños?</p>
+				<p>¡En este curso te ayudamos!</p>
+				<!-- Etiqueta de enlace que lleva a la página para inscibirse -->
+				<a class="btn btn-primary" href="pages/signup.php">¡¡INSCRIBETE!!</a>
+			</div>
+		</div>	
+	</section>
+	<!-- Sección 2 -->
+	<section class="section2">
+		<div class="section1-1">
+			<p class="FB">
+				Te ofrecemos cursos que te ayudarán a mejorar tus habilidades, las cuales te permitirán desarrollar 
+				un sitio web mediante el uso de la tecnología Front-end. <br><br>
+				Para el desarrollo front-end se utilizan diferentes herramientas como HTML, CSS, entre otros. <br> 
+				Si nunca has escuhado sobre éstas, no te preocupes que aquí te damos una breve explicación, si quieres saber 
+				más puedes ir a la sección <b><a href="pages/ilustrate.php">ilústrate</a></b>, o bien, inscribete a uno de los
+				cursos que ofrecemos dando <b><a href="pages/signup.php">clic aquí</a></b>. 
+			</p>
+			<img src="img/home/fab.gif">
+			
+			<div class="container">
+				<div class="dfb">
+				  <h2>HTML</h2> 
+				  <p class="FB">Lenguaje de Maracado de Hipertextos es usado para crear documentos en la web. <br>
+				  Se utiliza para organizar el contenido, por lo que se toma como la estructura de una página web. </p>
+				</div>	  
+				<div class="dfb">
+				  <h2>CSS</h2>
+				  <p class="FB">Hojas de estilo en cascada se usa para la presentación del contenido de una página web. <br>
+				  Se encarga de dar diseño, estilo o aspecto visual a cualquier elemento de un sitio web.</p>
+				</div>
+			</div>
+			<img src="img/home/hc.png">
+	</section>
+	<section>
+		<div class="section1-1">
+			<div class="container dtem">
+				<p class="tem">Hoy en día contamos con diversos estudiantes que han podido desarrollar su propio sitio web
+				gracias a los cursos que ofrecemos.
+				<!-- Imagen con enlace a página de comentarios -->
+				<br>Conoce algunos de sus comentarios.<a href="pages/comentarios.php"><img src="img/home/flecha.png"></a></p>
+			</div>
+			<div class="container dimg">
+				<img src="img/comentarios/tsus.jpg" class="tema">
+			</div>
+		</div>	
+	</section>
+	
+	<!-- Pie de página con direcciones propias para las imágenes -->
+	<footer id="contacto">
+		<p>Síguenos en nuestras redes sociales:</p>
+		<a href="#" target="_blank">
+			<img src="img/contac/ig.png">
+		</a>
+		<a href="#" target="_blank">
+			<img src="img/contac/fb.png">
+		</a>
+		<a href="#" target="_blank">
+			<img src="img/contac/yt.png">
+		</a>
+		<a href="#" target="_blank">
+			<img src="img/contac/tw.png">
+		</a>
+		<br>
+		<!-- Derechos de autor -->
+		<div class="copyright">&copy: 2021 LearnCoding, todos los derechos reservados.</div>
+	</footer>
+	<!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    </body>
+</html>
